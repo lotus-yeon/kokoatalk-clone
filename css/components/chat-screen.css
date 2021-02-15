@@ -1,0 +1,12 @@
+.chat-screen {
+  background-color: #ffffff;
+  height: 500vh;
+}
+.chat-screen .status-bar {
+  background-color: #ffffff;
+  z-index: 2;
+}
+.chat-screen .alt-header {
+  background-color: #ffffff;
+  z-index: 1;
+}

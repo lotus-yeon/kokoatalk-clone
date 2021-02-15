@@ -6,6 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  background-color: var(--hotpink);
   border-radius: 50%;
 }

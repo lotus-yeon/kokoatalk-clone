@@ -1,5 +1,4 @@
 .settings-list {
-  margin-top: 70px;
   padding-bottom: 20px;
   border-bottom: var(--main-border);
 }
@@ -22,4 +21,11 @@
 }
 .settings-setting__column:last-child {
   opacity: 0.7;
+}
+
+.settings-setting .settings-setting__column span {
+  transition: color 0.1s ease-in-out;
+}
+.settings-setting:hover .settings-setting__column span {
+  color: var(--hotpink);
 }

@@ -1,5 +1,17 @@
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .badge {
-  background-color: tomato;
+  background-color: var(--hotpink);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,4 +23,5 @@
   font-size: 12px;
   left: 10px;
   bottom: 10px;
+  animation: notificationAnimation 2.5s ease-in-out infinite;
 }

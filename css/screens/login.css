@@ -33,21 +33,62 @@
   transition: border-color 0.3s ease-in-out;
 }
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--hotpink);
 }
 #login-form input[type="password"] {
   margin-bottom: 20px;
 }
 #login-form input[type="submit"] {
   margin-bottom: 15px;
-  background-color: var(--yellow);
+  background-color: var(--navy);
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
+  color: white;
 }
 #login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;
   font-size: 12px;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--navy);
+  color: var(--hotpink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  font-size: 100px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes iconStart {
+  0% {
+    transform: scale(0.2) rotateY(360deg);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#splash-screen i {
+  animation: iconStart 1.2s ease-in-out forwards;
 }

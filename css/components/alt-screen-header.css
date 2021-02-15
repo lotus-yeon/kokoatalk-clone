@@ -15,6 +15,7 @@
   font-weight: 600;
 }
 .alt-header__column:first-child {
+  color: var(--navy);
   margin-right: auto;
 }
 .alt-header__column:nth-of-type(2) {
@@ -24,6 +25,7 @@
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
+  color: var(--navy);
 }
 .alt-header__column span:last-child {
   margin-left: 20px;

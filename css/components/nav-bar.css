@@ -6,6 +6,7 @@
   padding: 20px 40px;
   box-sizing: border-box;
   border-top: 1px solid rgba(207, 207, 207, 0.5);
+  color: var(--navy);
 }
 .nav__list {
   display: flex;
@@ -38,20 +39,6 @@
   animation-delay: 0.3s;
 }
 
-@keyframes notificationAnimation {
-  0% {
-    transform: none;
-  }
-  50% {
-    transform: rotateY(360deg);
-  }
-  100% {
-    transform: none;
-  }
-}
 .nav__notification {
   position: absolute;
-}
-.nav__link .badge {
-  animation: notificationAnimation 2.5s ease-in-out infinite;
 }

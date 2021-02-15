@@ -26,13 +26,13 @@
 .open-post {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .open-post__title {
   font-weight: 600;
   margin-bottom: 5px;
 }
 .open-post__hashtags {
-  text-transform: uppercase;
   opacity: 0.6;
   font-size: 14px;
 }

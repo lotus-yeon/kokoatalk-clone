@@ -1,3 +1,7 @@
+.user-component {
+  transition: color 0.1s ease-in-out;
+}
+
 .user-component,
 .user-component__column:first-child {
   display: flex;
@@ -19,12 +23,29 @@
 .user-component__title {
   font-weight: 600;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.user-component__title span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: var(--navy);
+  color: white;
+  font-size: 2px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 .user-component__subtitle {
   display: flex;
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
+}
+.user-component__subtitle i {
+  font-size: 10px;
 }
 .user-component__subtitle .phone-num {
   margin-right: 5px;
@@ -35,8 +56,8 @@
   align-items: center;
   width: 13px;
   height: 13px;
-  border: 1.5px solid red;
-  color: red;
+  border: 1.5px solid var(--hotpink);
+  color: var(--hotpink);
   border-radius: 50%;
   font-size: 12px;
   font-weight: 500;
@@ -60,4 +81,8 @@
 .user-component__time {
   margin-bottom: 5px;
   display: block;
+}
+
+.user-component:hover {
+  color: var(--hotpink);
 }

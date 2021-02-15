@@ -1,0 +1,82 @@
+@keyframes fadeInRight {
+  from {
+    transform: translateX(-5px);
+    opacity: 0;
+  }
+  to {
+    transform: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(5px);
+    opacity: 0;
+  }
+  to {
+    transform: 0;
+    opacity: 1;
+  }
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  animation: fadeInRight 0.3s linear;
+}
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 18px;
+  margin-right: 8px;
+}
+.message__author {
+  display: block;
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.message__bubble {
+  background-color: var(--navy);
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  padding: 8px 10px;
+  margin-right: 5px;
+  color: white;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__info div {
+  display: flex;
+  flex-direction: column;
+}
+.message__info img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+.message__time {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: fadeInLeft 0.3s linear;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.message-row--own .message__bubble {
+  background-color: #ffffff;
+  border: 1px solid var(--hotpink);
+  border-top-right-radius: 0;
+  border-top-left-radius: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  color: black;
+}

@@ -1,0 +1,95 @@
+.profile-screen__status-bar {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  z-index: 1;
+}
+.profile-screen__header {
+  z-index: 1;
+}
+.profile-screen__header i {
+  transition: color 0.1s ease-in-out;
+}
+.profile-screen__header,
+.profile-screen__header .fa-times,
+.profile-screen__header .fa-cog {
+  color: white;
+}
+.profile-screen__header .screen-header__icons > div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: color 0.1s ease-in-out;
+}
+.profile-screen__header .screen-header__icons .fa-cog {
+  color: white;
+  transition: color 0.1s ease-in-out;
+}
+.profile-screen {
+  position: relative;
+}
+.background-img {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+}
+.background-img img {
+  width: 100%;
+}
+.profile-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+.profile-screen img {
+  margin-top: 430px;
+  width: 90px;
+  height: 90px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+.profile-screen__bar {
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(255, 255, 255, 0.555);
+}
+.profile-screen__bar-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: translateY 0.2s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+.profile-screen__bar-icon i {
+  margin-bottom: 10px;
+}
+.profile-screen__bar-icon span {
+  font-size: 12px;
+}
+
+.profile-screen__header i:hover {
+  color: var(--hotpink);
+}
+.profile-screen__header .screen-header__icons div:hover,
+.profile-screen__header .screen-header__icons .fa-cog:hover {
+  color: var(--hotpink);
+}
+.profile-screen__header .screen-header__icons div:hover {
+  border: 1px solid var(--hotpink);
+}
+
+.profile-screen__bar-icon:hover {
+  transform: translateY(-5px);
+  color: var(--hotpink);
+}
