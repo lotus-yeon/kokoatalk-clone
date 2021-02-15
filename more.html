@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>21:23</span>
+        </div>   
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <div><i class="fas fa-search fa-lg"></i></div> 
+            <div><i class="fas fa-music fa-lg"></i></div>
+            <div>
+                <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+                <span class="screen-header__notification dot"></span>
+            </div>       
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/001/833/941/small/woman-profile-faceless-portrait-free-vector.jpg"
+                />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Megan</h4>
+                    <h6 class="user-component__subtitle">
+                        <span class="phone-num">+1 458-875-1234</span>
+                        <span class="notification">!</span>
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-check fa-2x"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fab fa-google-drive fa-2x"></i>
+                <span>Talk Drive</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-grin-squint fa-2x"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-paint-roller fa-2x"></i>
+                <span>Themes</span>
+            </div>
+        </div>
+
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-user-circle fa-2x"></i>
+                <span>Account</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-comments fa-2x"></i>
+                <span>Openchat</span>
+            </div>
+            <div class="icon-row__icon icon-row__icon--none">
+                <i class="far fa-grin-squint fa-2x"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon icon-row__icon--none">
+                <i class="fas fa-paint-roller fa-2x"></i>
+                <span>Themes</span>
+            </div>
+        </div>
+
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX64QD////22gD74QD1417z3EX23AD589fw0gD32wD02AD74AD//v/64gDx1QD33gD9/ff8+uv8+OL34Cf37KP7+d3799f465b36Ib45G324k769Mz577H03SD13jr34F/9/PLy2Sv05Hby4YT26Zj131P57rf58cP57KL36ovy1yLz4nvy3Wb25I3y2lT37rtgDPTFAAADu0lEQVR4nO3dD1+iMBzHcQY5HRMGaPZHz6Ss7vxTz//ZHWjnlSH+KO61/bjv+xH0abC1IeZ5AAAAAAAAAAAAAAAAAAAAAAAAAMBc8A2RF9n+8c8JlPK/TCkpte2COoGnR+NL8S2TK6cb1fX38naSG3cTzVULgQV3E2/bCRwmI9slJ5hpO4VCzKTtlmo/2goUqbHdUkm3dJGW5rZjKum79gp7Ts41+gKF3AsNClGIQutQiEIU2odCFKLQPhSiEIX2oRCFKLQPhShEoX0oRCEK7UMhClFoHwpRiEL7UIhCFNqHQhSi0D4UohCF9qEQhSi0D4Uo/M8KbcdUarPQzfeeTHvvPS1WtmMqmV5rhamj7x+GSVuFmbLdUs1/aquw79tuqaRl3tYgTt0s9LTf1lwzc/Qq9WTYy1op3Do605SJ8WY87Z9G/AXcO1vomaJxUOOBVnjn5rvcO0bW8ZekwCS3nfFlakYqXIRO/uFNISekwoxvoUpJhc4uFmfpOe1PAncXi3P0DSlQPDo8ldaTtIlG8L0NJW3BT0PbP+hX6TltCJ/4TjQ/aYUPXCeawKetFSLnOtEExG/o4Xsbqmda4bPPdSrNaYEub51qRWpMLJxzvQ1HxEOcjOttaIhLhVg6egp1TkT+MrdbprehIZ6lDtOY522oySf+S6e/3PM0Sf5W05znRWq21MDLkOdFSn8qdc1yCCNFPglPVhyHMJCv5CF8ZbncN/nu3ReWm997euCE4wmNfqQHihuGQ0g9m9lJY4ZDSDwD3luzG8JIzxeNhpDZUhFEQd4kUFzzO76gbnqZDmGxn2j20Yx7bkOoL5oF9pkNoTbE50wHj8xOL/SvhoHPzLZNjf8PRLKSvApHDQPFltkQUh/2HvRjbjvfph8X7rH7ey0kPkh7s2R2jRbknRBDcmA2YBfomXDdYAjnzObRHRmTDxDFmt81WpID4kdLxBO7eXTPyJj2zDcdcLxGS1rFfUJgknMNLEdxQFgzNjxvwj3jnz+l2TLbMx0x4cuZwBnTWebAhJvawCn3QE/LuO6z65OBYn2NlorE0x8yydiuEx/I+NSTJ74L4UfFmlH9TwPTgd+JwCJRxZ8fkA5FlnclsBzF1edlMVv53KfRd0zYS442i1ncpcAy8ei1vWKZ6FRgOaF+2BC/xt25B98YE797p2vcmVn0nSLxsCFex91YB4/oPxvixUs3A3d7/nLl76/Cjs0xfxWJm9lDF2/Bg/IN2rCjV+ieLhpNlwMBAAAAAAAAAAAAAAAAAOAf+w1wb0nmYNPDGQAAAABJRU5ErkJggg==">
+                    <span class="more-suggestions__icon-text">Kokoa Story</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX64QD////22gD74QD1417z3EX23AD589fw0gD32wD02AD74AD//v/64gDx1QD33gD9/ff8+uv8+OL34Cf37KP7+d3799f465b36Ib45G324k769Mz577H03SD13jr34F/9/PLy2Sv05Hby4YT26Zj131P57rf58cP57KL36ovy1yLz4nvy3Wb25I3y2lT37rtgDPTFAAADu0lEQVR4nO3dD1+iMBzHcQY5HRMGaPZHz6Ss7vxTz//ZHWjnlSH+KO61/bjv+xH0abC1IeZ5AAAAAAAAAAAAAAAAAAAAAAAAAMBc8A2RF9n+8c8JlPK/TCkpte2COoGnR+NL8S2TK6cb1fX38naSG3cTzVULgQV3E2/bCRwmI9slJ5hpO4VCzKTtlmo/2goUqbHdUkm3dJGW5rZjKum79gp7Ts41+gKF3AsNClGIQutQiEIU2odCFKLQPhSiEIX2oRCFKLQPhShEoX0oRCEK7UMhClFoHwpRiEL7UIhCFNqHQhSi0D4UohCF9qEQhSi0D4Uo/M8KbcdUarPQzfeeTHvvPS1WtmMqmV5rhamj7x+GSVuFmbLdUs1/aquw79tuqaRl3tYgTt0s9LTf1lwzc/Qq9WTYy1op3Do605SJ8WY87Z9G/AXcO1vomaJxUOOBVnjn5rvcO0bW8ZekwCS3nfFlakYqXIRO/uFNISekwoxvoUpJhc4uFmfpOe1PAncXi3P0DSlQPDo8ldaTtIlG8L0NJW3BT0PbP+hX6TltCJ/4TjQ/aYUPXCeawKetFSLnOtEExG/o4Xsbqmda4bPPdSrNaYEub51qRWpMLJxzvQ1HxEOcjOttaIhLhVg6egp1TkT+MrdbprehIZ6lDtOY522oySf+S6e/3PM0Sf5W05znRWq21MDLkOdFSn8qdc1yCCNFPglPVhyHMJCv5CF8ZbncN/nu3ReWm997euCE4wmNfqQHihuGQ0g9m9lJY4ZDSDwD3luzG8JIzxeNhpDZUhFEQd4kUFzzO76gbnqZDmGxn2j20Yx7bkOoL5oF9pkNoTbE50wHj8xOL/SvhoHPzLZNjf8PRLKSvApHDQPFltkQUh/2HvRjbjvfph8X7rH7ey0kPkh7s2R2jRbknRBDcmA2YBfomXDdYAjnzObRHRmTDxDFmt81WpID4kdLxBO7eXTPyJj2zDcdcLxGS1rFfUJgknMNLEdxQFgzNjxvwj3jnz+l2TLbMx0x4cuZwBnTWebAhJvawCn3QE/LuO6z65OBYn2NlorE0x8yydiuEx/I+NSTJ74L4UfFmlH9TwPTgd+JwCJRxZ8fkA5FlnclsBzF1edlMVv53KfRd0zYS442i1ncpcAy8ei1vWKZ6FRgOaF+2BC/xt25B98YE797p2vcmVn0nSLxsCFex91YB4/oPxvixUs3A3d7/nLl76/Cjs0xfxWJm9lDF2/Bg/IN2rCjV+ieLhpNlwMBAAAAAAAAAAAAAAAAAOAf+w1wb0nmYNPDGQAAAABJRU5ErkJggg==">
+                    <span class="more-suggestions__icon-text">Kokoa Friends</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX64QD////22gD74QD1417z3EX23AD589fw0gD32wD02AD74AD//v/64gDx1QD33gD9/ff8+uv8+OL34Cf37KP7+d3799f465b36Ib45G324k769Mz577H03SD13jr34F/9/PLy2Sv05Hby4YT26Zj131P57rf58cP57KL36ovy1yLz4nvy3Wb25I3y2lT37rtgDPTFAAADu0lEQVR4nO3dD1+iMBzHcQY5HRMGaPZHz6Ss7vxTz//ZHWjnlSH+KO61/bjv+xH0abC1IeZ5AAAAAAAAAAAAAAAAAAAAAAAAAMBc8A2RF9n+8c8JlPK/TCkpte2COoGnR+NL8S2TK6cb1fX38naSG3cTzVULgQV3E2/bCRwmI9slJ5hpO4VCzKTtlmo/2goUqbHdUkm3dJGW5rZjKum79gp7Ts41+gKF3AsNClGIQutQiEIU2odCFKLQPhSiEIX2oRCFKLQPhShEoX0oRCEK7UMhClFoHwpRiEL7UIhCFNqHQhSi0D4UohCF9qEQhSi0D4Uo/M8KbcdUarPQzfeeTHvvPS1WtmMqmV5rhamj7x+GSVuFmbLdUs1/aquw79tuqaRl3tYgTt0s9LTf1lwzc/Qq9WTYy1op3Do605SJ8WY87Z9G/AXcO1vomaJxUOOBVnjn5rvcO0bW8ZekwCS3nfFlakYqXIRO/uFNISekwoxvoUpJhc4uFmfpOe1PAncXi3P0DSlQPDo8ldaTtIlG8L0NJW3BT0PbP+hX6TltCJ/4TjQ/aYUPXCeawKetFSLnOtEExG/o4Xsbqmda4bPPdSrNaYEub51qRWpMLJxzvQ1HxEOcjOttaIhLhVg6egp1TkT+MrdbprehIZ6lDtOY522oySf+S6e/3PM0Sf5W05znRWq21MDLkOdFSn8qdc1yCCNFPglPVhyHMJCv5CF8ZbncN/nu3ReWm997euCE4wmNfqQHihuGQ0g9m9lJY4ZDSDwD3luzG8JIzxeNhpDZUhFEQd4kUFzzO76gbnqZDmGxn2j20Yx7bkOoL5oF9pkNoTbE50wHj8xOL/SvhoHPzLZNjf8PRLKSvApHDQPFltkQUh/2HvRjbjvfph8X7rH7ey0kPkh7s2R2jRbknRBDcmA2YBfomXDdYAjnzObRHRmTDxDFmt81WpID4kdLxBO7eXTPyJj2zDcdcLxGS1rFfUJgknMNLEdxQFgzNjxvwj3jnz+l2TLbMx0x4cuZwBnTWebAhJvawCn3QE/LuO6z65OBYn2NlorE0x8yydiuEx/I+NSTJ74L4UfFmlH9TwPTgd+JwCJRxZ8fkA5FlnclsBzF1edlMVv53KfRd0zYS442i1ncpcAy8ei1vWKZ6FRgOaF+2BC/xt25B98YE797p2vcmVn0nSLxsCFex91YB4/oPxvixUs3A3d7/nLl76/Cjs0xfxWJm9lDF2/Bg/IN2rCjV+ieLhpNlwMBAAAAAAAAAAAAAAAAAOAf+w1wb0nmYNPDGQAAAABJRU5ErkJggg==">
+                    <span class="more-suggestions__icon-text">Friends Gem</span>
+                </div>             
+            </div>
+        </div>
+          
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-lg" ></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification dot"></span>
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+        <span>(Only mobile and portrait)</span>
+    </div>
+
+    <script
+        src="https://kit.fontawesome.com/e5f5233f60.js"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
